@@ -80,28 +80,28 @@ body, html {
     height: auto;
     bottom: 25vh;         /* ⬆️ los subimos para que entren en el ramo */
     z-index: 10;
-    --move-x: 0;
-  --move-y: -2vh;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-out;
     transform-origin: bottom center;
     pointer-events: auto;
 }
 
 .book:hover{
-  transform: translateY(-2vh) scale(1.08) !important;
-  z-index: 30;
+  z-index: 25;
 }
-.b1:hover{
-  transform: translateX(-1.5vh) translateY(-2vh) scale(1.08) !important;
+.b1:hover { 
+    transform: translateX(-50%) translateY(-5vh); 
 }
-.b4:hover{
-  transform: translateX(-1vh) translateY(-2vh) scale(1.08) !important;
+.b2:hover { 
+    transform: translateX(-50%) translateX(7vh) translateY(-2vh); 
 }
-.b5:hover{
-  transform: translateX(1.5vh) translateY(-2vh) scale(1.08) !important;
+.b3:hover { 
+    transform: translateX(-50%) translateX(-4vh) translateX(-5vh) translateY(-2vh); 
 }
-.b3:hover{
-  transform: translateY(-2.5vh) scale(1.08) !important;
+.b4:hover { 
+    transform: translateX(-50%) translateX(-12vh) translateX(-5vh) translateY(-2vh); 
+}
+.b5:hover { 
+    transform: translateX(-50%) translateX(13vh) translateY(-2vh); 
 }
 
 /* Posiciones tipo abanico (ajusta según tu gusto) */
@@ -188,4 +188,5 @@ body, html {
 
 .hitbox:hover .book{
   transform: scale(1.08) translateY(-2vh);
+
 }
