@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-quet para mi Cuñada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <img src="assets/Fondo.png" class="background-base">
+
+        <img src="assets/Flor_15.png" class="decor f1"> 
+        <img src="assets/Flor_2.png" class="decor h1">  
+        <img src="assets/Flor_10.png" class="decor f2"> 
+        <img src="assets/Flor_7.png" class="decor f3">  
+        <img src="assets/Flor_4.png" class="decor h2">  
+        <img src="assets/Flor_5.png" class="decor f4">  
+        <img src="assets/Flor_1.png" class="decor h3">  
+        <img src="assets/Flor_13.png" class="decor f5"> 
+        <img src="assets/Flor_3.png" class="decor h4">  
+        <img src="assets/Flor_9.png" class="decor f6">  
+        <img src="assets/Flor_12.png" class="decor f7"> 
+        <img src="assets/Flor_2.png" class="decor h5">  
+        <img src="assets/Flor_15.png" class="decor f8">
+        <img src="assets/Flor_5.png" class="decor f9">
+        <img src="assets/Flor_1.png" class="decor h6">
+        <img src="assets/Flor_10.png" class="decor f10">
+        <img src="assets/Flor_4.png" class="decor h7">
+        <img src="assets/Flor_13.png" class="decor f11">
+        <img src="assets/Flor_3.png" class="decor h8">
+
+        <div class="bouquet-area">
+            <img src="assets/Ramo.png" class="bouquet-back">
+
+            <img src="assets/Picking_daisies_on_sundays.png" class="book b1" onclick="openBook('assets/Picking_daisies_on_sundays_abierto.svg')">
+            <img src="assets/When_in_rome.png" class="book b2" onclick="openBook('assets/When_in_Rome_abierto.svg')">
+            <img src="assets/CheckMate.png" class="book b3" onclick="openBook('assets/Checkmate_abierto.svg')">
+            <img src="assets/Dont_be_in_love.png" class="book b4" onclick="openBook('assets/Dont_be_in_love_abierto.svg')">
+            <img src="assets/You_deserve_each_other.png" class="book b5" onclick="openBook('assets/You_Deserve_each_other_abierto.svg')">
+            
+            <img src="assets/Ramo_Frente.png" class="bouquet-wrapper">
+        </div>
+    </div>
+
+    <div id="book-modal" class="modal" onclick="closeBook()">
+        <div class="modal-content">
+            <img id="opened-book-img" src="" alt="Libro Abierto">
+        </div>
+    </div>
+
+    <div class="hitbox b1-hit">
+        <img src="assets/Picking_daisies_on_sundays.png" class="book b1">
+    </div>
+
+    <script>
+        function openBook(src) {
+            const modal = document.getElementById('book-modal');
+            const img = document.getElementById('opened-book-img');
+            img.src = src;
+            modal.style.display = 'flex';
+        }
+
+        function closeBook() {
+            document.getElementById('book-modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
