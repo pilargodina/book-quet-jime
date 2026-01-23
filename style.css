@@ -130,7 +130,7 @@ body, html {
 .b4 {/*dont*/
     left: 50%;
     transform: translateX(-50%) translateX(-12vh);
-    bottom: 26vh;
+    bottom: 28vh;
 }
 
 .b5 {/*deserve*/
@@ -188,6 +188,7 @@ body, html {
   transform: scale(1.08) translateY(-2vh);
 
 }
+
 
 
 
