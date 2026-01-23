@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book-quet para mi Cuñada</title>
+    <title>Book-quet para Jime</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="main-container">
+        <div class="texto-cumple">
+            <h1 class="titulo">¡Feliz Cumple Jime! 🎂</h1>
+            <p class="subtitulo">Un ramito de libros elegido para vos</p>
+        </div>
+        
         <img src="assets/Fondo.png" class="background-base">
 
         <img src="assets/Flor_15.png" class="decor f1"> 
@@ -60,11 +65,20 @@
             const img = document.getElementById('opened-book-img');
             img.src = src;
             modal.style.display = 'flex';
+
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#AC68E1', '#FCE4EC', '#FFD700'] // Podés poner los colores de tu Figma
+            });
         }
 
         function closeBook() {
             document.getElementById('book-modal').style.display = 'none';
         }
     </script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </body>
+
 </html>
