@@ -115,7 +115,7 @@ body, html {
 .b2 {/*when in rome*/
     left: 50%;
     transform: translateX(-50%) translateX(7vh);
-    bottom: 33vh;
+    bottom: 35vh;
     z-index: 5;
     width: 12vh;
 }
@@ -188,27 +188,6 @@ body, html {
   transform: scale(1.08) translateY(-2vh);
 }
 
-.texto-cumple {
-    position: absolute;
-    top: 5vh; /* Lo ubica arriba de todo */
-    text-align: center;
-    width: 100%;
-    z-index: 30; /* Para que esté por encima del fondo */
-    pointer-events: none; /* Para que no moleste si querés cliquear algo atrás */
-}
-
-.titulo {
-    font-family: 'Arial', sans-serif; /* O la que elijas */
-    color: #5D3B7A; /* Un violeta oscuro que contraste con el fondo */
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-.subtitulo {
-    color: #7B4B9E;
-    font-size: 1.2rem;
-    margin-top: 5px;
-}
 
 
 
