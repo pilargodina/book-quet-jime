@@ -123,14 +123,14 @@ body, html {
 .b3 {/*checkmate*/
     left: 50%;
     transform: translateX(-50%) translateX(-4vh);
-    bottom: 33vh;
+    bottom: 35vh;
     z-index: 5;
 }
 
 .b4 {/*dont*/
     left: 50%;
     transform: translateX(-50%) translateX(-12vh);
-    bottom: 28vh;
+    bottom: 30vh;
 }
 
 .b5 {/*deserve*/
@@ -188,6 +188,7 @@ body, html {
   transform: scale(1.08) translateY(-2vh);
 
 }
+
 
 
 
