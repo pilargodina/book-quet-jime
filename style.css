@@ -188,6 +188,36 @@ body, html {
   transform: scale(1.08) translateY(-2vh);
 }
 
+.harry-section {
+    position: absolute;
+    bottom: 2vh;
+    right: 5vw; /* Lo ponemos en una esquina para que no tape el ramo */
+    text-align: center;
+    cursor: pointer;
+    z-index: 30;
+    transition: transform 0.3s ease;
+}
+
+.harry-sticker {
+    width: 100px; /* Ajustá el tamaño a tu gusto */
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+}
+
+/* El HOVER que pediste */
+.harry-section:hover {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.harry-hint {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 2px black;
+}
+
+
 
 
 
