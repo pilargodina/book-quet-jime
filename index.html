@@ -43,6 +43,15 @@
             
             <img src="assets/Ramo_Frente.png" class="bouquet-wrapper">
         </div>
+        <div class="harry-section" onclick="playHarry()">
+            <img src="assets/harry_styles.png" class="harry-sticker" alt="Harry Styles">
+            <p class="harry-hint">¡Tocame! ✨</p>
+        </div>
+        
+        <audio id="harry-audio">
+            <source src="assets/birthday_audio.m4a" type="audio/mp4">
+            Tu navegador no soporta el audio.
+        </audio>
     </div>
 
     <div id="book-modal" class="modal" onclick="closeBook()">
@@ -70,6 +79,29 @@
             });
         }
 
+        function playHarry() {
+            const audio = document.getElementById('harry-audio');
+    
+            // Reinicia el audio por si lo quiere apretar varias veces
+            audio.currentTime = 0; 
+            
+            // El método play() devuelve una "promesa"
+            const playPromise = audio.play();
+        
+            if (playPromise !== undefined) {
+                playPromise.then(_ => {
+                    // El audio empezó: ¡Tiramos confeti!
+                    confetti({
+                        particleCount: 150,
+                        spread: 100,
+                        origin: { x: 0.9, y: 0.9 } // Sale desde donde está Harry
+                    });
+                }).catch(error => {
+                    console.log("Error al reproducir:", error);
+                });
+            }
+        }
+
         function closeBook() {
             document.getElementById('book-modal').style.display = 'none';
         }
@@ -78,4 +110,5 @@
 </body>
 
 </html>
+
 
